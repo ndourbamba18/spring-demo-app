@@ -16,5 +16,6 @@ public class DemoController {
     @GetMapping("/")
     public ResponseEntity<?> findAll(){
         return new ResponseEntity<>("Hello and Welcome to NdourCodeur :)", HttpStatus.OK);
+        System.out.println("Hello"
     }
 }
