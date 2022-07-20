@@ -40,6 +40,14 @@ public class DemoController {
     public ResponseEntity<?> findById(@PathVariable Long id){
         return new ResponseEntity<>("Getting object by id:"+id, HttpStatus.OK);
     }
+    
+    /**
+     *  URL ====> http://localhost:8080/api/v1/demo/{id}
+     */
+    @GetMapping("/{id}")
+    public ResponseEntity<?> findById(@PathVariable Long id){
+        return new ResponseEntity<>("Getting object by id:"+id, HttpStatus.OK);
+    }
 
     /**
      *  URL ====> http://localhost:8080/api/v1/demo/{id}
